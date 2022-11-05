@@ -1,5 +1,5 @@
 # demo1
-Repositorio de practica Spring framework. Desarrollo de una API basica que pretende disponer al cliente informacion relacionadas a usuarios.
+Repositorio de practica Spring framework. Desarrollo de una API basica que pretende disponer al cliente informacion relacionadas a usuarios (nombre, correo, prioridad).
 
 ## Herramientas de desarrollo
 <ul>
