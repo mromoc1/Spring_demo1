@@ -27,7 +27,7 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
 
 ## Ejecutar demo1
 <ul>
-    <li>Instalar: OpenJDK8 (JDK con el que fue testeado) - MySQL - Postman(si prefiere)</li>
+    <li>Instalar: OpenJDK8 (JDK con el que fue testeado) - MySQL - Postman(opcional)</li>
     <li>Clonar repositorio</li>
     <li>Crear una base de datos en MySQL</li>
     <li>Modificar el archivo <code>application.properties</code> con los datos de la base de datos creada</li>
@@ -36,7 +36,7 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
         <li>mvnw.cmd spring-boot:run</li>
         <li>./mvnw.cmd spring-boot:run</li>
     </ul>
-    <li>Fork repositorio postman para pruebas</li>
+    <li>Fork repositorio postman para pruebas(opcional)</li>
 </ul>
 
 ## Imagenes
