@@ -58,10 +58,10 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
     <li>Reemplazar y modificar archivos de configuracion de la carpeta 'config'</li>
     <li>Inicializar en orden</li>
     <ul>
-        <li>Elasticsearch <code>.\ELK\elasticsearch\bin\elasticsearch.bat</code></li>
-        <li>Kibana <code>.\ELK\kibana\bin\kibana.bat</li>
-        <li>Logstash <code>.\ELK\logstash\bin\logstash -f .\ELK\logstash\logstash.conf</code></li>
-        <li>Filebeat <code>.\ELK\filebeat\filebeat.exe -c .\ELK\filebeat\filebeat.yml</code></li>
-        <li>API: <code>.\mvnw spring-boot:run</code></li>            
+        <li>Elasticsearch <code>'.\ELK\elasticsearch\bin\elasticsearch.bat'</code></li>
+        <li>Kibana <code>'.\ELK\kibana\bin\kibana.bat'</code></li>
+        <li>Logstash <code>'.\ELK\logstash\bin\logstash -f .\ELK\logstash\logstash.conf'</code></li>
+        <li>Filebeat <code>'.\ELK\filebeat\filebeat.exe -c .\ELK\filebeat\filebeat.yml'</code></li>
+        <li>API: <code>'.\mvnw spring-boot:run'</code></li>            
     </ul>
 </ul>
