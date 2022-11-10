@@ -1,0 +1,34 @@
+test log
+asd10-11-2022 01:10:53 [main] INFO  com.example.demo.DemoApplication.logStarting - Starting DemoApplication using Java 1.8.0_202 on DESKTOP-IAVCGJR with PID 17068 (C:\Users\mromo\OneDrive\Escritorio\Workspace\Spring_demo1\target\classes started by mromo in C:\Users\mromo\OneDrive\Escritorio\Workspace\Spring_demo1)
+10-11-2022 01:10:53 [main] INFO  com.example.demo.DemoApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+10-11-2022 01:10:56 [main] INFO  com.example.demo.DemoApplication.logStarted - Started DemoApplication in 3.898 seconds (JVM running for 4.241)
+10-11-2022 01:11:14 [http-nio-8080-exec-2] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:12:42 [http-nio-8080-exec-5] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:12:57 [http-nio-8080-exec-6] INFO  c.e.d.controllers.UsuarioController.guardarUsuario - Se guardo el usuario: marcelo modificado cuyo correo es: marcelomodificado@gmail.com con una prioridad de:2
+10-11-2022 01:13:02 [http-nio-8080-exec-7] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:14:42 [http-nio-8080-exec-10] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:43 [http-nio-8080-exec-1] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:43 [http-nio-8080-exec-2] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:44 [http-nio-8080-exec-3] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:44 [http-nio-8080-exec-4] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:44 [http-nio-8080-exec-5] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:45 [http-nio-8080-exec-6] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:45 [http-nio-8080-exec-7] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:48 [http-nio-8080-exec-8] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:14:55 [http-nio-8080-exec-9] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:02 [http-nio-8080-exec-10] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:05 [http-nio-8080-exec-1] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:08 [http-nio-8080-exec-2] ERROR c.e.d.controllers.UsuarioController.eliminarPorId - Error al eliminar el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:19 [http-nio-8080-exec-3] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorPrioridad - Error al obtener la lista de usuarios => java.lang.String cannot be cast to java.lang.Integer
+10-11-2022 01:15:25 [http-nio-8080-exec-4] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:26 [http-nio-8080-exec-5] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:26 [http-nio-8080-exec-6] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:27 [http-nio-8080-exec-7] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:27 [http-nio-8080-exec-8] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:28 [http-nio-8080-exec-9] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:31 [http-nio-8080-exec-10] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorId - Error al obtener el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:33 [http-nio-8080-exec-1] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorId - Error al obtener el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:36 [http-nio-8080-exec-2] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorId - Error al obtener el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:40 [http-nio-8080-exec-3] INFO  c.e.d.controllers.UsuarioController.obtenerUsuarios - Se obtuvieron todos los usuarios
+10-11-2022 01:15:48 [http-nio-8080-exec-4] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorId - Error al obtener el usuario => java.lang.String cannot be cast to java.lang.Long
+10-11-2022 01:15:54 [http-nio-8080-exec-5] ERROR c.e.d.controllers.UsuarioController.obtenerUsuarioPorId - Error al obtener el usuario => java.lang.String cannot be cast to java.lang.Long
