@@ -39,8 +39,7 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
     <li>Fork repositorio postman para pruebas(opcional)</li>
 </ul>
 
-## Imagenes
-<h3>Flujo de informacion</h3>
+## Flujo de informacion
 <img src="assets/Flujo de informacion Spring.png" align="center" style="width: 100%">
 
 ## Herramientas de desarrollo version 2
@@ -52,16 +51,23 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
 </ul>
 
 ## Ejecutar demo version 2
+Integracion de Elastic Stack para la obtencion de datos del sistema y su visualizacion a traves de Kibana. Esto simula un software de monitoreo de informacion el cual nos permitira en un ambiente de produccion conocer el estado de nuestros servicios asi como tambien si estos dan el ancho tanto para la carga de trabajo actual como futura.
+
 <ul>
-    <li>Descargar Elastic Stack v6.3.1: <a href="https://www.elastic.co/es/downloads/past-releases">enlace</a></li>
+    <li>Descargar Elastic Stack v8.5.0: <a href="https://www.elastic.co/es/downloads/past-releases">enlace</a></li>
     <li>Descomprimir en directorio 'ELK'</li>
     <li>Reemplazar y modificar archivos de configuracion de la carpeta 'config'</li>
     <li>Inicializar en orden</li>
     <ul>
         <li>Elasticsearch <code>'.\ELK\elasticsearch\bin\elasticsearch.bat'</code></li>
         <li>Kibana <code>'.\ELK\kibana\bin\kibana.bat'</code></li>
-        <li>Logstash <code>'.\ELK\logstash\bin\logstash -f .\ELK\logstash\logstash.conf'</code></li>
+        <li>Logstash <code>'.\ELK\logstash\bin\logstash -f logstash.conf'</code></li>
         <li>Filebeat <code>'.\ELK\filebeat\filebeat.exe -c .\ELK\filebeat\filebeat.yml'</code></li>
+        <li>Heartbeat <code>'.\ELK\heartbeat\heartbeat.exe -c .\ELK\heartbeat\heartbeat.yml'</code></li>
+        <li>Metricbeat <code>'.\ELK\metricbeat\metricbeat.exe -c .\ELK\metricbeat\metricbeat.yml'</code></li>
+        <li>Packetbeat <code>'.\ELK\packetbeat\packetbeat.exe -c .\ELK\packetbeat\packetbeat.yml'</code></li>
         <li>API: <code>'.\mvnw spring-boot:run'</code></li>            
     </ul>
 </ul>
+
+## Flujo de informacion

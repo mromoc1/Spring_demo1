@@ -43,7 +43,7 @@ public class UsuarioController {
             log.info("Se obtuvieron todos los usuarios");
             return usuarioService.obtenerUsuarios();
         } catch (Exception e) {
-            log.error("Error al obtener usuarios => ", e.getMessage());
+            log.error("Error al obtener la lista de usuario => {}", e.getMessage());
             return null;
         }
     }
@@ -57,49 +57,49 @@ public class UsuarioController {
             log.info("Se guardo el usuario: " + usuario.getNombre()+ " cuyo correo es: " + usuario.getCorreo()+ " con una prioridad de:" + usuario.getPrioridad());
             return this.usuarioService.guardarUsuario(usuario);
         } catch (Exception e) {
-            log.error("Error al guardar el usuario => " + e.getMessage());
+            log.error("Error al guardar el usuario especificado => {}", e.getMessage());
             return null;
         }
     }
     
     @GetMapping(path = "/{id}")
-    public Optional<UsuarioModel> obtenerUsuarioPorId(@PathVariable("id") Object id) {
+    public Optional<UsuarioModel> obtenerUsuarioPorId(@PathVariable("id") String id) {
         // @PathVariable es una anotacion que indica que el objeto que se recibe como parametro es un parametro de la ruta
         try {
-            log.info("Se obtuvo el usuario con id: " + (Long)id);
-            return this.usuarioService.obtenerPorId((Long)id);
+            log.info("Se obtuvo el usuario con id: " + Long.parseLong(id));
+            return this.usuarioService.obtenerPorId(Long.parseLong(id));
         } catch (Exception e) {
-            log.error("Error al obtener el usuario => " + e.getMessage());
+            log.error("ERROR al retornar el usuario especificado => {}", e.getMessage());
             return null;
         }
     }
     
     @GetMapping("/query")
-    public ArrayList<UsuarioModel> obtenerUsuarioPorPrioridad(@RequestParam("prioridad") Object prioridad) {
+    public ArrayList<UsuarioModel> obtenerUsuarioPorPrioridad(@RequestParam("prioridad") String prioridad) {
         // @RequestParam es una anotacion que indica que el objeto que se recibe como parametro es un parametro de la URL
         try {
-            log.info("Se obtuvo la lista de usuario con prioridad: " + (Integer)prioridad);
-            return this.usuarioService.obtenerPorPrioridad((Integer)prioridad);
+            log.info("Se obtuvo la lista de usuario con prioridad: " + Integer.parseInt(prioridad));
+            return this.usuarioService.obtenerPorPrioridad(Integer.parseInt(prioridad));
         } catch (Exception e) {
-            log.error("Error al obtener la lista de usuarios => " + e.getMessage());
+            log.error("Error al obtener la lista de usuarios por prioridad especificada => {}", e.getMessage());
             return null;
         }
     }
 
     @DeleteMapping(path = "/{id}")
     // @DeleteMapping es una anotacion que indica que es un metodo que responde a una peticion DELETE
-    public String eliminarPorId(@PathVariable("id") Object id) {
+    public String eliminarPorId(@PathVariable("id") String id) {
         try {
-            boolean ok = this.usuarioService.eliminarUsuario((Long) id);
+            boolean ok = this.usuarioService.eliminarUsuario(Long.parseLong( id));
             if (ok) {
-                log.info("Se elimino el usuario con id: " + (Long)id);
-                return "Se elimino el usuario con id: " + (Long)id;
+                log.info("Se elimino el usuario con id: " + Long.parseLong(id));
+                return "Se elimino el usuario con id: " + Long.parseLong(id);
             } else {
-                log.info("No se pudo eliminar el usuario con id: " + (Long)id);
-                return "No se pudo eliminar el usuario con id: " + (Long)id;
+                log.info("No se pudo eliminar el usuario con id: " + Long.parseLong(id));
+                return "No se pudo eliminar el usuario con id: " + Long.parseLong(id);
             }
         } catch (Exception e) {
-            log.error("Error al eliminar el usuario => " + e.getMessage());
+            log.error("Error al eliminar el usuario con el id especificado => {}", e.getMessage());
             return "Error al eliminar el usuario: " + e.getMessage();
         }
     }
