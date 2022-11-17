@@ -44,10 +44,10 @@ Repositorio de practica Spring framework. Desarrollo de una API basica que prete
 
 ## Herramientas de desarrollo version 2
 <ul>
-    <li>Kibana</li>
-    <li>Elasticsearch</li>
-    <li>logstash</li>
-    <li>filebeat</li>
+    <li>BEATS (Metric/File/Heart/Packetbeat)  : Para la obtención de métricas del servidor y de los servicios</li>
+    <li>LOGSTASH: Para filtrar información de LOGS generados por la API</li>
+    <li>ELASTICSEARCH: Para la indexación de datos obtenidos desde BEATS y LOGSTASH</li>
+    <li>KIBANA: Para la visualizacion y monitoreo de los datos indexados</li>
 </ul>
 
 ## Ejecutar demo version 2
@@ -71,3 +71,4 @@ Integracion de Elastic Stack para la obtencion de datos del sistema y su visuali
 </ul>
 
 ## Flujo de informacion
+<img src="assets/Flujo de informacion Elastic.png" align="center" style="width: 100%">
